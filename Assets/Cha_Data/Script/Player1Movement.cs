@@ -19,7 +19,7 @@ public class Player1Movement : MonoBehaviour {
 			this.transform.position = position;
 			this.transform.rotation = Quaternion.Euler(180, 90, 90);
 			animator = GetComponent<Animator>();
-			animator.SetBool("isMoving", true);
+			//animator.SetBool("isMoving", true);
 
 
 		}

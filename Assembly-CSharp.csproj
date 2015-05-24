@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3CDA9027-E2C4-2EB0-A3B3-530469E24C96}</ProjectGuid>
+	<ProjectGuid>{9DB5F85B-7A60-954B-A008-1FF4CDA2AEFD}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -54,10 +54,12 @@
      <Compile Include="Assets\Ares\Script\uGUITools.cs" />
      <Compile Include="Assets\Cha_Data\Script\Player1Movement.cs" />
      <Compile Include="Assets\Cha_Data\Script\ScreenShot.cs" />
+     <Compile Include="Assets\Scripts\FireBullet.cs" />
      <Compile Include="Assets\Scripts\FollowingText.cs" />
      <Compile Include="Assets\Scripts\FoodMovement.cs" />
      <Compile Include="Assets\Scripts\MockController.cs" />
      <Compile Include="Assets\Scripts\MockSpwn.cs" />
+     <Compile Include="Assets\Scripts\moveBullet.cs" />
      <Compile Include="Assets\test.cs" />
      <None Include="Assets\Cha_Data\Shader\WrapLambert.shader" />
      <None Include="Assets\NewShader.shader" />
