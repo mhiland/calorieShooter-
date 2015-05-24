@@ -38,9 +38,10 @@ public class FoodMovement : MonoBehaviour {
 	void OnTriggerEnter(Collider other) 
 	{
 		if (other.gameObject.tag == "player1") {
-            eatingsound.Play();
+            
             Debug.Log ("contacted");
 			Destroy(this.gameObject);
+            eatingsound.Play();
         }
 
 	}
