@@ -12,7 +12,7 @@ public class BtnScript : MonoBehaviour {
     Button highValBtn;
     Button currentBtnSelected;
 
-    struct valueScope {
+    public struct valueScope {
       public  int minValue;
       public  int maxValue;
     }
@@ -20,7 +20,7 @@ public class BtnScript : MonoBehaviour {
     valueScope lowValBtnScope;
     valueScope midValBtnScope;
     valueScope highValBtnScope;
-    valueScope currentValScope;
+    public static valueScope currentValScope;
     string debugInfo;
 
     enum levelOfBtnSelected {
@@ -35,7 +35,7 @@ public class BtnScript : MonoBehaviour {
     Color colorForUnselectedBtn;
     // Use this for initialization
     void Start () {
-        highestCalValueInItems = 536;
+        highestCalValueInItems = 600;
 
         lowValBtn = GameObject.Find("LowValButton").GetComponent<Button>();
         midValBtn = GameObject.Find("MidValButton").GetComponent<Button>();

@@ -47,10 +47,20 @@ public class FoodMovement : MonoBehaviour {
 
         if (other.gameObject.tag == "Bullet")
         {
-            Debug.Log("Bullet Contacted");
+
+            string example = this.gameObject.GetComponent<Text>().text;
+
+            int calVal = int.Parse(example);
+            Debug.Log("calVal:" + calVal + "min: " + BtnScript.currentValScope.minValue + "max: " + BtnScript.currentValScope.maxValue);
+            if ((calVal >= BtnScript.currentValScope.minValue) && (calVal <= BtnScript.currentValScope.maxValue))
+            {
+
+                Destroy(this.gameObject);
+            }
+
             Destroy(other.gameObject);
-            Destroy(this.gameObject);
+
         }
 
-	}
+    }
 }
