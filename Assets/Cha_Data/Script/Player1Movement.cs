@@ -3,14 +3,14 @@ using System.Collections;
 
 public class Player1Movement : MonoBehaviour {
     public static  float movingSpeed = 1;
-    public static Image hpBarImage;
+  //  public static Image hpBarImage;
     AudioSource walkingsound;
     Animation walking;
     // Use this for initialization
     void Start () {
         walkingsound = this.GetComponent<AudioSource>();
         walking = this.GetComponent<Animation>();
-        hpBarImage = GameObject.Find("HP Bar_Full").GetComponent<Image>();
+  //      hpBarImage = GameObject.Find("HP Bar_Full").GetComponent<Image>();
     }
 	
 	
@@ -92,10 +92,10 @@ public class Player1Movement : MonoBehaviour {
         {
             walking.CrossFade("Attack");
         }
-        if (hpBarImage.fillAmount <= 0)
+      /*  if (hpBarImage.fillAmount <= 0)
         {
             //Game Over
             walking.CrossFade("Dead");
-        }
+        }*/
     }
 }

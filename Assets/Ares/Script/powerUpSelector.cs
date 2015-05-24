@@ -17,11 +17,13 @@ public class powerUpSelector : MonoBehaviour {
         if (randomVal >= 0.5)
         {
             powerUpType = powerUpItemTypes.displayCalVal;
-            gameObject.GetComponent<MeshRenderer>().materials[0].color = Color.blue;
+            // gameObject.GetComponent<MeshRenderer>().materials[0].color = Color.blue;
+            gameObject.GetComponent<MeshRenderer>().materials[0].mainTexture= Resources.Load("glasses") as Texture2D;
         }
         else {
             powerUpType = powerUpItemTypes.speedUp;
-            gameObject.GetComponent<MeshRenderer>().materials[0].color = Color.green;
+            //gameObject.GetComponent<MeshRenderer>().materials[0].color = Color.green;
+            gameObject.GetComponent<MeshRenderer>().materials[0].mainTexture = Resources.Load("Shoes") as Texture2D;
         }
 
 
