@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class FoodMovement : MonoBehaviour {
 
-	public GameObject player1;
+	GameObject player1;
 	[Range(0.1f, 3f)]
 	public float speed;
 
@@ -14,7 +14,11 @@ public class FoodMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.transform.position = new Vector3 (player1.transform.position.x + 500, player1.transform.position.y + 500, player1.transform.position.z);
+		Debug.Log ("Object created");
+		//this.transform.position = new Vector3 (player1.transform.position.x + 500, player1.transform.position.y + 500, player1.transform.position.z);
+		player1 = GameObject.FindWithTag("player1");
+		if (player1 != null)
+			Debug.Log ("found player1!");
 	
 	}
 	

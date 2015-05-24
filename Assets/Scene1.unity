@@ -218,7 +218,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482270, guid: 645ff30ff4e2515489d8fd1c8ec14b05, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22482270, guid: 645ff30ff4e2515489d8fd1c8ec14b05, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -335,6 +335,7 @@ GameObject:
   - 92: {fileID: 720305560}
   - 124: {fileID: 720305559}
   - 81: {fileID: 720305558}
+  - 114: {fileID: 720305563}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -408,6 +409,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &720305563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720305557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4bb730a57103c409d0b65ab396a3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
+  food: {fileID: 143728, guid: af4c579edad871849a1306bfabf4e4f5, type: 2}
 --- !u!1001 &1094765988
 Prefab:
   m_ObjectHideFlags: 0
@@ -449,7 +463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
       propertyPath: m_LocalScale.x
@@ -474,6 +488,10 @@ Prefab:
     - target: {fileID: 13700000, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
       propertyPath: m_UseLightProbes
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
+      propertyPath: m_TagString
+      value: player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
