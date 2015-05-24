@@ -4,7 +4,7 @@ using System.Collections;
 public class moveBullet : MonoBehaviour {
 	public GameObject player1;
     public float speed = 60.0f;
-	public Quaternion pos;
+	public Vector3 pos;
     public int up = 180;
     public int down = 0;
     public int left = 90;
@@ -14,13 +14,11 @@ public class moveBullet : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		pos = GameObject.Find("SpawnPoint").transform.rotation;
+		pos = GameObject.Find("SpawnPoint").transform.position;
         posVec = Input.mousePosition;
        posVec.z = transform.position.z - Camera.main.transform.position.z;
      //   posVec.x = transform.position.x - Camera.main.transform.position.x;
-        posVec = Camera.main.ScreenToWorldPoint(posVec);
-        posVec.y =transform.position.y;
-        
+        posVec = Camera.main.ScreenToWorldPoint(posVec)-transform.position;        
     }
 
 	// Update is called once per frame

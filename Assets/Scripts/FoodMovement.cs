@@ -7,14 +7,16 @@ public class FoodMovement : MonoBehaviour {
 	GameObject player1;
 	[Range(0.1f, 3f)]
 	public float speed;
+    AudioSource eatingsound;
 
 
 
 
 
-	// Use this for initialization
-	void Start () {
-		Debug.Log ("Object created");
+    // Use this for initialization
+    void Start () {
+        eatingsound = this.GetComponent<AudioSource>();
+        Debug.Log ("Object created");
 		//this.transform.position = new Vector3 (player1.transform.position.x + 500, player1.transform.position.y + 500, player1.transform.position.z);
 		player1 = GameObject.FindWithTag("player1");
 		if (player1 != null)
@@ -38,7 +40,8 @@ public class FoodMovement : MonoBehaviour {
 		if (other.gameObject.tag == "player1") {
 			Debug.Log ("contacted");
 			Destroy(this.gameObject);
-		}
+            eatingsound.Play();
+        }
 
 	}
 }
