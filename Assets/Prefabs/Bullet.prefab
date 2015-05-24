@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
   speed: 60
-  pos: {x: 0, y: 0, z: 0, w: 0}
+  pos: {x: 0, y: 0, z: 0}
   up: 180
   down: 0
   left: 90

@@ -364,7 +364,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: .330000013
+    radius: 10
     angle: 0
     length: 5
     boxX: 1
