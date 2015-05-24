@@ -106,7 +106,7 @@ public class BtnScript : MonoBehaviour {
         currentWeaponLevel = levelOfBtnSelected.low;
 
         debugInfo = "the highest cal value: " + highestCalValueInItems + "\nthe scope chosen: " + currentValScope.minValue + " to " + currentValScope.maxValue;
-        GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
+       // GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
     }
 
     public void midValBtnFunc()
@@ -116,7 +116,7 @@ public class BtnScript : MonoBehaviour {
         currentValScope = midValBtnScope;
 
         debugInfo = "the highest cal value: " + highestCalValueInItems + "\nthe scope chosen: " + currentValScope.minValue + " to " + currentValScope.maxValue;
-        GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
+       // GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
     }
 
     public void highValBtnFunc()
@@ -126,7 +126,7 @@ public class BtnScript : MonoBehaviour {
         currentValScope = highValBtnScope;
 
         debugInfo = "the highest cal value: "+highestCalValueInItems+"\nthe scope chosen: " + currentValScope.minValue + " to " + currentValScope.maxValue;
-        GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
+      //  GameObject.Find("DebugText").GetComponent<Text>().text = debugInfo;
     }
 
     void keyboardInput() {

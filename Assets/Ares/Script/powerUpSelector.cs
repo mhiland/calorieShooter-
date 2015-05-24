@@ -38,8 +38,8 @@ public class powerUpSelector : MonoBehaviour {
     {
         if (other.gameObject.tag == "player1")
         {
-            if (!powerUpSound.isPlaying)
-                powerUpSound.Play();
+          //  if (!powerUpSound.isPlaying)
+               // powerUpSound.Play();
              
             if (powerUpType == powerUpItemTypes.speedUp)
             {

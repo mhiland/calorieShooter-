@@ -98,6 +98,7 @@ public class Player1Movement : MonoBehaviour {
         {
             //Game Over
             walking.CrossFade("Dead");
+            print("health bar empty");
         }
     }
 }

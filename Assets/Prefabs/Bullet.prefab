@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 427478}
   - 33: {fileID: 3378372}
-  - 135: {fileID: 13544146}
   - 23: {fileID: 2346602}
   - 114: {fileID: 11414198}
   - 54: {fileID: 5407898}
+  - 136: {fileID: 13635582}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -97,17 +97,18 @@ MonoBehaviour:
   left: 90
   right: 270
   posVec: {x: 0, y: 0, z: 0}
---- !u!135 &13544146
-SphereCollider:
+--- !u!136 &13635582
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166562}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: .5
+  m_Height: 6.48999977
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:

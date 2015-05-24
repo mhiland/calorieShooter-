@@ -34,7 +34,7 @@ public class FireBullet : MonoBehaviour {
             Instantiate(Bullet, pos.position, pos.rotation);
            
             bulletSound.Play();
-            bulletaction.Play();
+         //   bulletaction.Play();
             
         }
     }
