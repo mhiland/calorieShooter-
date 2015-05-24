@@ -3,7 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Applejuice
+  - bread
+  - broccoli
+  - cake
+  - cherry
+  - chicken
+  - chips
+  - chocolate
+  - chowmein
+  - cinnaroll
+  - coffee
+  - egg
+  - fries
+  - icecream
+  - kimchi
+  - milk
+  - pizza
+  - potato
+  - salad
+  - sandwich
+  - sushi
+  - New Tag
+  - player1
   layers:
   - Default
   - TransparentFX
