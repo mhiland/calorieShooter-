@@ -41,9 +41,17 @@ public class FoodMovement : MonoBehaviour {
             
             Debug.Log ("contacted");
             HPBarScript.hpBarImage.fillAmount -= 0.1f;
-			Destroy(this.gameObject);
-            eatingsound.Play();
+            //eatingsound.Play();
+            Destroy(this.gameObject);
         }
+
+        if(other.gameObject.tag == "Bullet")
+        {
+            Debug.Log("Bullet contacted");
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+
 
 	}
 }

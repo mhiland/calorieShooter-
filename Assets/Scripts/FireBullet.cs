@@ -31,7 +31,7 @@ public class FireBullet : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             var pos = GameObject.Find("SpawnPoint").transform;
-            Instantiate(Bullet, pos.position, pos.rotation);
+            Instantiate(Bullet, pos.position + new Vector3(0,0.7f,0), pos.rotation);
            
             bulletSound.Play();
             bulletaction.Play();
