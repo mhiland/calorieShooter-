@@ -35,7 +35,7 @@ public class BtnScript : MonoBehaviour {
     Color colorForUnselectedBtn;
     // Use this for initialization
     void Start () {
-        highestCalValueInItems = 300;
+        highestCalValueInItems = 536;
 
         lowValBtn = GameObject.Find("LowValButton").GetComponent<Button>();
         midValBtn = GameObject.Find("MidValButton").GetComponent<Button>();
