@@ -9,9 +9,11 @@ public class powerUpSelector : MonoBehaviour {
     }
     float randomVal;
     powerUpItemTypes powerUpType;
+    AudioSource powerUpSound;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
+        powerUpSound = this.GetComponent<AudioSource>();
         randomVal = Random.value;
         
         if (randomVal >= 0.5)
@@ -25,9 +27,6 @@ public class powerUpSelector : MonoBehaviour {
             //gameObject.GetComponent<MeshRenderer>().materials[0].color = Color.green;
             gameObject.GetComponent<MeshRenderer>().materials[0].mainTexture = Resources.Load("Shoes") as Texture2D;
         }
-
-
-
 	}
 	
 	// Update is called once per frame
@@ -39,6 +38,9 @@ public class powerUpSelector : MonoBehaviour {
     {
         if (other.gameObject.tag == "player1")
         {
+            if (!powerUpSound.isPlaying)
+                powerUpSound.Play();
+             
             if (powerUpType == powerUpItemTypes.speedUp)
             {
                 powerUpEffects.isSpeedUpTrigered = true;
@@ -49,6 +51,7 @@ public class powerUpSelector : MonoBehaviour {
                 Debug.Log("Displayed");
             }
             Destroy(this.gameObject);
+
         }
 
     }
