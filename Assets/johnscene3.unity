@@ -558,6 +558,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 4.73999977
+  difficulty: 2
+  speedChange: .5
+  speed: .5
   apple: {fileID: 115396, guid: 706e2970a1d14594da5d8d696ff5476d, type: 2}
   bread: {fileID: 163744, guid: 39c60f5849c42224493a9df3f65d13a5, type: 2}
   broccoli: {fileID: 188560, guid: 5e94442a190ef4c42aabb52b22ebf92c, type: 2}

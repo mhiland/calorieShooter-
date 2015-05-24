@@ -37,6 +37,7 @@ public class FireBullet : MonoBehaviour {
             bulletaction.Play();
             
         }
-        Destroy(GameObject.Find("Bullet(Clone)"), 5);
     }
+
+    
 }

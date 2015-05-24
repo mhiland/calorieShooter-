@@ -25,6 +25,7 @@ public class moveBullet : MonoBehaviour {
 	void Update () {
         
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x+posVec.x, transform.position.y, transform.position.z+posVec.z), speed * Time.deltaTime);
+        Destroy(this.gameObject, 5.0f);
 
 
         /*
@@ -48,4 +49,5 @@ public class moveBullet : MonoBehaviour {
         }
         */
     }
+
 }

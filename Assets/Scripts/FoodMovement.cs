@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class FoodMovement : MonoBehaviour {
 
 	GameObject player1;
-	[Range(0.1f, 3f)]
 	public float speed;
     AudioSource eatingsound;
 
@@ -15,6 +14,7 @@ public class FoodMovement : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        speed = MockSpwn._speed;
         eatingsound = this.GetComponent<AudioSource>();
         Debug.Log ("Object created");
 		//this.transform.position = new Vector3 (player1.transform.position.x + 500, player1.transform.position.y + 500, player1.transform.position.z);
@@ -40,9 +40,17 @@ public class FoodMovement : MonoBehaviour {
 		if (other.gameObject.tag == "player1") {
             
             Debug.Log ("contacted");
-			Destroy(this.gameObject);
-            eatingsound.Play();
+            //eatingsound.Play();
+            Destroy(this.gameObject);
         }
+
+        if(other.gameObject.tag == "Bullet")
+        {
+            Debug.Log("Bullet Hit");
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+
 
 	}
 }
