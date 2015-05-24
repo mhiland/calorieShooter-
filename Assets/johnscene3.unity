@@ -716,7 +716,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11122230, guid: 854761248e0a1f94c861790301146593, type: 2}
       propertyPath: m_Animations.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 460644, guid: 854761248e0a1f94c861790301146593, type: 2}
       propertyPath: m_LocalPosition.x
@@ -762,6 +762,10 @@ Prefab:
       propertyPath: m_PlayAutomatically
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11122230, guid: 854761248e0a1f94c861790301146593, type: 2}
+      propertyPath: m_Animations.Array.data[2]
+      value: 
+      objectReference: {fileID: 7400000, guid: f524334c8ae52f24b8c15fda83e34712, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 854761248e0a1f94c861790301146593, type: 2}
   m_IsPrefabParent: 0

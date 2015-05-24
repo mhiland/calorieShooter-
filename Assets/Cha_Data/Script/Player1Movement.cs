@@ -2,13 +2,15 @@
 using System.Collections;
 
 public class Player1Movement : MonoBehaviour {
-  public static  float movingSpeed = 1;
+    public static  float movingSpeed = 1;
+    public static Image hpBarImage;
     AudioSource walkingsound;
     Animation walking;
     // Use this for initialization
     void Start () {
         walkingsound = this.GetComponent<AudioSource>();
         walking = this.GetComponent<Animation>();
+        hpBarImage = GameObject.Find("HP Bar_Full").GetComponent<Image>();
     }
 	
 	
@@ -89,6 +91,11 @@ public class Player1Movement : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             walking.CrossFade("Attack");
+        }
+        if (hpBarImage.fillAmount <= 0)
+        {
+            //Game Over
+            walking.CrossFade("Dead");
         }
     }
 }
