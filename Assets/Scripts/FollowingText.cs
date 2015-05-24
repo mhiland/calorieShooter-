@@ -9,7 +9,7 @@ public class FollowingText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_text = GetComponent<Text> ();
-		_text.color = Color.white;
+		_text.color = Color.black;
         _text.fontSize = 20;
 		if (this.gameObject.tag == "Applejuice")
 			_text.text = "Cal: "+MockSpwn.calVal;

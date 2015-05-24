@@ -27,7 +27,7 @@ public class powerUpItemScript : MonoBehaviour {
 
             float y =_randY;
 
-            Instantiate(powerUpItem, new Vector3(x, 1, y), Quaternion.identity);
+            Instantiate(powerUpItem, new Vector3(x, 1, y), Quaternion.Euler(90,0,0));
 
             timer = 0;
         }
