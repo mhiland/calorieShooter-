@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Cha_Data\Script\Player1Movement.cs" />
      <Compile Include="Assets\Cha_Data\Script\ScreenShot.cs" />
+     <Compile Include="Assets\waitToWalk.cs" />
      <None Include="Assets\Cha_Data\Shader\WrapLambert.shader" />
      <None Include="Assets\NewShader.shader" />
  <Reference Include="UnityEngine.UI">

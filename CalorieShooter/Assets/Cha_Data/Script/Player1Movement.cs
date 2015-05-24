@@ -11,12 +11,17 @@ public class Player1Movement : MonoBehaviour {
 	
 	void Update ()
 	{
+		Animator animator;
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			Vector3 position = this.transform.position;
 			position.x--;
 			this.transform.position = position;
 			this.transform.rotation = Quaternion.Euler(180, 90, 90);
+			animator = GetComponent<Animator>();
+			animator.SetBool("isMoving", true);
+
+
 		}
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
