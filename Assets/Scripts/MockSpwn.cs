@@ -30,9 +30,9 @@ public class MockSpwn: MonoBehaviour {
 			Debug.Log ("random number : " + _rand);
 
 			float x = setRadius * Mathf.Cos (_rand) + p.x;
-			float y = setRadius * Mathf.Sin (_rand) + p.y;
+			float z = setRadius * Mathf.Sin (_rand) + p.z;
 		
-			Instantiate (food, new Vector3 (x, y, 0), Quaternion.identity);
+			Instantiate (food, new Vector3 (x, 0, z), Quaternion.Euler(90,0,0));
 
 			time = 0;
 		}
