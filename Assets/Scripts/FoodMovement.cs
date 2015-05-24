@@ -24,9 +24,12 @@ public class FoodMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Mathf.Abs ((this.transform.position - player1.transform.position).magnitude) > 5f) {
-			this.transform.position = Vector3.MoveTowards (this.transform.position, player1.transform.position, speed);
-		}
+		//if (Mathf.Abs ((player1.transform.position - this.transform.position).magnitude) > .5f) {
+			this.transform.position = Vector3.MoveTowards (this.transform.position, player1.transform.position + 23*Vector3.left, speed);
+			//float x = Mathf.Lerp(this.transform.position.x, player1.transform.position.x, Time.deltaTime * speed);
+			//float z = Mathf.Lerp(this.transform.position.z, player1.transform.position.z, Time.deltaTime * speed);
+			//this.transform.position = new Vector3(x,this.transform.position.y,z);
+		//}
 	
 	}
 

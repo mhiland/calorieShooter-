@@ -28,8 +28,8 @@ public class MockSpwn: MonoBehaviour {
 
 		if (time > 3) {
 
-			//int r = Random.Range (0,21);
-			int r = 1;
+			int r = Random.Range (0,21);
+			//int r = 1;
 
 			if(r == 0) food = apple;
 			else if(r == 1) food = bread;
@@ -59,7 +59,7 @@ public class MockSpwn: MonoBehaviour {
 			float x = setRadius * Mathf.Cos (_rand) + p.x;
 			float z = setRadius * Mathf.Sin (_rand) + p.z;
 		
-			GameObject _food = (GameObject) Instantiate (food, new Vector3 (x, 0.2f, z), Quaternion.identity);
+			GameObject _food = (GameObject) Instantiate (food, new Vector3 (x, 0.7f, z), Quaternion.identity);
 			Canvas can = _food.GetComponentInChildren<Canvas>();
 			Camera cam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
 			can.worldCamera = cam;

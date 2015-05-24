@@ -10,6 +10,7 @@ public class FollowingText : MonoBehaviour {
 	void Start () {
 		_text = GetComponent<Text> ();
 		_text.color = Color.white;
+        _text.fontSize = 20;
 		if (this.gameObject.tag == "Applejuice")
 			_text.text = "AppleJuice";
 		else if (this.gameObject.tag == "bread")
