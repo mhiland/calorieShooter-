@@ -6,18 +6,30 @@ public class MockSpwn: MonoBehaviour {
 
 	[Range(3.0f, 30.0f)]
 	public float radius;
-	public GameObject apple, bread, broccoli, cake, cherry, chicken,
+    [Range(1.0f, 10.0f)]
+    public int difficulty;
+    [Range(0.01f, 10.0f)]
+    public float speedChange;
+    [Range(0.1f, 3f)]
+    public float speed;
+
+    public static float _speed;
+
+    public GameObject apple, bread, broccoli, cake, cherry, chicken,
 	chips, chocolate, chowmein, cinnaroll, coffee, egg, fries, icecream,
 	kimchi, milk, pizza, potato, salad, sandwich, sushi, food;
 
 	float setRadius;
 	Vector3 p;
 	float time;
+    int counter;
 
     public static int calVal;
 	// Use this for initialization
 	void Start () {
+        _speed = speed;
 		time = 0;
+        counter = 0;
 		setRadius = Mathf.PI * Mathf.Pow (radius, 2.0f);
 		GameObject player = GameObject.FindWithTag ("player1");
 		p = player.transform.position;
@@ -29,6 +41,7 @@ public class MockSpwn: MonoBehaviour {
 		time += Time.deltaTime;
 
 		if (time > 3) {
+            counter++;
 
 			int r = Random.Range (0,21);
             //int r = 1;
@@ -81,6 +94,7 @@ public class MockSpwn: MonoBehaviour {
 			can.worldCamera = cam;
 
 			time = 0;
+            if (counter % difficulty == 0) _speed += speedChange;
 		}
 
 		
