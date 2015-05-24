@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Player1Movement : MonoBehaviour {
     public static  float movingSpeed = 1;
     public static Image hpBarImage;
+    bool singleton = true;
     AudioSource walkingsound;
     Animation walking;
     // Use this for initialization
@@ -94,11 +95,23 @@ public class Player1Movement : MonoBehaviour {
         {
             walking.CrossFade("Attack");
         }
-        if (hpBarImage.fillAmount <= 0)
+        if (hpBarImage.fillAmount == 0)
         {
             //Game Over
-            walking.CrossFade("Dead");
-            print("health bar empty");
+            if (singleton)
+            {
+                walking.Play("Dead");
+                print("health bar empty");
+                singleton = false;
+                
+            }
+            print("GameOver");
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            print("Reset Game");
+            hpBarImage.fillAmount = 1;
+           // Application.LoadLevel("");
         }
     }
 }

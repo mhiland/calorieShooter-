@@ -1455,7 +1455,7 @@ Prefab:
     - target: {fileID: 11122230, guid: 854761248e0a1f94c861790301146593, type: 2}
       propertyPath: m_Animations.Array.data[2]
       value: 
-      objectReference: {fileID: 7400000, guid: f524334c8ae52f24b8c15fda83e34712, type: 3}
+      objectReference: {fileID: 7400000, guid: 119550f2b2b0fe748875dc68a648b28c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 854761248e0a1f94c861790301146593, type: 2}
   m_IsPrefabParent: 0
@@ -1565,7 +1565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458028, guid: 3be12a9498c58a3488adc5e8e2b0a489, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3be12a9498c58a3488adc5e8e2b0a489, type: 2}
@@ -3642,7 +3642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430508, guid: 833a9d1ba3255ae42816888262dba200, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 833a9d1ba3255ae42816888262dba200, type: 2}
