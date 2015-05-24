@@ -16,11 +16,11 @@ public class powerUpItemScript : MonoBehaviour {
 
         timer += Time.deltaTime;
 
-        if (timer > 3)
+        if (timer > 15)
         {
 
-            float _randX = Random.Range(-78, 76);
-            float _randY = Random.Range(-75, 60);
+            float _randX = Random.Range(-60, 70);
+            float _randY = Random.Range(-30, 15);
             //Debug.Log("random number : " + _rand);
 
             float x = _randX;

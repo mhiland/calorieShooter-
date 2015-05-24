@@ -1077,7 +1077,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848469575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -1125,7 +1125,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42da1302afc2e4a4f898e2eaf3359b7b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .133000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
