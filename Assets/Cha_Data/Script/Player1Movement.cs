@@ -12,7 +12,7 @@ public class Player1Movement : MonoBehaviour {
 	void Update ()
 	{
 		Animator animator;
-		if (Input.GetKey(KeyCode.LeftArrow))
+		if (Input.GetKey(KeyCode.A) && gameObject.transform.position.x > GameObject.Find("Wall3").transform.position.x)
 		{
 			Vector3 position = this.transform.position;
 			position.x-=movingSpeed;
@@ -23,7 +23,7 @@ public class Player1Movement : MonoBehaviour {
 
 
 		}
-		if (Input.GetKey(KeyCode.RightArrow))
+		if (Input.GetKey(KeyCode.D) && gameObject.transform.position.x < GameObject.Find("Wall4").transform.position.x)
 		{
 			Vector3 position = this.transform.position;
 			position.x+=movingSpeed;
@@ -31,14 +31,14 @@ public class Player1Movement : MonoBehaviour {
 			this.transform.rotation = Quaternion.Euler(0, 90, 90);
 		//	this.transform.Rotate(0, 0, 90);
 		}
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.W) && gameObject.transform.position.z < GameObject.Find("Wall2").transform.position.z)
 		{
 			Vector3 position = this.transform.position;
 			position.z+=movingSpeed; 
 			this.transform.position = position;
 			this.transform.rotation = Quaternion.Euler(90, 90, 90);
 		}
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(KeyCode.S) && gameObject.transform.position.z > GameObject.Find("Wall1").transform.position.z)
 		{
 			Vector3 position = this.transform.position;
 			position.z-=movingSpeed;
