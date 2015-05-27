@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9DB5F85B-7A60-954B-A008-1FF4CDA2AEFD}</ProjectGuid>
+	<ProjectGuid>{85BB5F83-562C-E543-27D0-B4FB7E3A21D1}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -51,7 +51,6 @@
      <Compile Include="Assets\Ares\Script\powerUpEffects.cs" />
      <Compile Include="Assets\Ares\Script\powerUpItemScript.cs" />
      <Compile Include="Assets\Ares\Script\powerUpSelector.cs" />
-     <Compile Include="Assets\Ares\Script\uGUITools.cs" />
      <Compile Include="Assets\Cha_Data\Script\Player1Movement.cs" />
      <Compile Include="Assets\Cha_Data\Script\ScreenShot.cs" />
      <Compile Include="Assets\Scripts\FireBullet.cs" />
